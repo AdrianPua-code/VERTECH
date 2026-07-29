@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertech — Mantenimiento, Ensamble y Desarrollo Web</title>
+<meta name="description" content="Vertech — Soporte técnico, mantenimiento y venta de equipos de cómputo, compra/venta de partes y creación de páginas web. Atención en sitio y remota.">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container-xl">
+    <a class="brand-mark" href="#top">
+      <span class="dot"></span>
+      <span>
+        Vertech
+        <span class="sub">Bogotá · Soporte &amp; Desarrollo</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" style="border-color:var(--line); filter:invert(1);">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMain">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#planes">Plantas</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#proceso">Cómo trabajamos</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#marketplace">Compra/Venta</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacto">Contacto</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn-whatsapp" href="https://wa.me/573204474231?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.22 8.22 0 1 1 6.96 3.84zm4.5-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="pcb-bg" id="pcbHero" aria-hidden="true"></div>
+  <div class="container-xl position-relative" style="z-index:1;">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <div class="eyebrow">Planes de mantenimiento para empresas</div>
+        <h1 class="reveal">
+          El soporte de un técnico interno,<br>por <span class="accent">menos de lo que crees.</span>
+        </h1>
+        <p class="hero-lede reveal">
+          <strong style="color:var(--text);">Vertech</strong> gestiona el mantenimiento de tus PCs
+          con visitas programadas, soporte remoto y atención prioritaria — sin nómina ni prestaciones.
+          También ensamblamos equipos, compramos/vendemos partes y creamos páginas web con hosting.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#planes" class="btn-solder">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            Ver planes de mantenimiento
+          </a>
+          <a href="https://wa.me/573204474231?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="btn-trace">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.22 8.22 0 1 1 6.96 3.84zm4.5-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+            Cotizar por WhatsApp
+          </a>
+        </div>
+
+        <div class="readout-strip reveal">
+          <div class="readout">
+            <div class="label">Técnico interno</div>
+            <div class="value">$3.500.000/mes</div>
+          </div>
+          <div class="readout">
+            <div class="label">Plan Premium Vertech</div>
+            <div class="value" style="color: var(--solder);">$2.000.000/mes</div>
+          </div>
+          <div class="readout">
+            <div class="label">Ahorro estimado</div>
+            <div class="value">≈ $1.500.000/mes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PLANES B2B (FOCO PRINCIPAL) ================= -->
+<section id="planes">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="section-tag">// Lo que más nos piden las empresas</span>
+      <h2 class="section-title">Mantenimiento de PCs <span class="accent">por suscripción</span></h2>
+      <p class="hero-lede" style="margin-top:1rem; margin-bottom:0;">
+        Olvídate de contratar, capacitar y sostener un técnico interno. Con un plan Vertech tienes
+        soporte, mantenimientos programados y documentación, por una fracción del costo.
+      </p>
+    </div>
+
+    <!-- Panel comparativo: técnico interno vs Plan Premium -->
+    <div class="compare-panel reveal">
+      <div class="compare-eyebrow">// Comparativo de costo mensual</div>
+      <div class="compare-headline">
+        ¿Técnico de planta o plan de mantenimiento? Esto es lo que cuesta cada camino.
+      </div>
+
+      <div class="compare-grid">
+        <div class="compare-col is-basic">
+          <div class="compare-label">Técnico interno</div>
+          <div class="compare-amount">$3.500.000 <span class="per">/ mes desde</span></div>
+          <div class="compare-desc">Salario, prestaciones y tiempo de gestión — cubriendo un solo horario, un solo par de manos.</div>
+          <ul>
+            <li>Solo disponible en tu horario laboral</li>
+            <li>Sin respaldo si se enferma o renuncia</li>
+            <li>Carga prestacional y de contratación</li>
+          </ul>
+        </div>
+
+        <div class="compare-vs">
+          <div class="vs-circle">VS</div>
+        </div>
+
+        <div class="compare-col is-vertech">
+          <div class="compare-label">Plan Premium Vertech</div>
+          <div class="compare-amount">$2.000.000 <span class="per">/ mes desde</span></div>
+          <div class="compare-desc">Visitas programadas, soporte remoto y atención prioritaria — sin nómina ni prestaciones.</div>
+          <ul>
+            <li>Visitas programadas + soporte remoto</li>
+            <li>Atención prioritaria ante incidentes</li>
+            <li>Equipo de respaldo, nunca un solo punto de falla</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare-savings">
+        <div class="savings-text">Un técnico interno cuesta desde <strong style="color:var(--text);">$3.500.000</strong> al mes.<br>Nuestro Plan Premium cuesta desde <strong style="color:var(--trace);">$2.000.000/mes</strong>, con visitas programadas, soporte remoto y atención prioritaria.</div>
+        <div class="savings-amount">Ahorras ≈ $1.500.000 / mes</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="price-card reveal">
+          <div class="plan-name">Plan Básico</div>
+          <div class="plan-target">Pymes pequeñas · 5–10 equipos</div>
+          <div class="plan-price">$400.000 <span class="per">/ mes</span></div>
+          <hr>
+          <ul>
+            <li>1 mantenimiento trimestral</li>
+            <li>Soporte remoto básico</li>
+            <li>Antivirus básico incluido</li>
+            <li>Inventario de equipos</li>
+            <li>Informe de mantenimiento</li>
+          </ul>
+          <a href="https://wa.me/573204474231?text=Hola%2C%20me%20interesa%20el%20Plan%20B%C3%A1sico" target="_blank" rel="noopener" class="btn-trace justify-content-center">Consultar plan</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="price-card featured reveal">
+          <span class="badge-featured">Más elegido</span>
+          <div class="plan-name">Plan Estándar</div>
+          <div class="plan-target">Empresas medianas · 10–25 equipos</div>
+          <div class="plan-price">$1.000.000 <span class="per">/ mes</span></div>
+          <div class="plan-target" style="margin-top:-.6rem; margin-bottom:1.3rem;">Desde ~$40.000 por equipo/mes</div>
+          <ul>
+            <li>2 mantenimientos mensuales</li>
+            <li>Soporte remoto continuo</li>
+            <li>Backups básicos incluidos</li>
+            <li>Antivirus e inventario de equipos</li>
+            <li>Informe mensual de mantenimiento</li>
+          </ul>
+          <a href="https://wa.me/573204474231?text=Hola%2C%20me%20interesa%20el%20Plan%20Est%C3%A1ndar" target="_blank" rel="noopener" class="btn-solder justify-content-center">Consultar plan</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="price-card reveal" style="border-color: var(--solder-dim);">
+          <span class="badge-featured" style="background: transparent; border:1px solid var(--solder); color: var(--solder);">Mejor ahorro vs. planta</span>
+          <div class="plan-name">Plan Premium</div>
+          <div class="plan-target">Oficinas grandes · 40–50 equipos</div>
+          <div class="plan-price" style="color: var(--solder);">$2.000.000 <span class="per">/ mes</span></div>
+          <hr>
+          <ul>
+            <li>Soporte rápido y prioritario</li>
+            <li>Mantenimientos programados</li>
+            <li>Gestión y revisión de redes</li>
+            <li>Backups completos</li>
+            <li>Documentación técnica completa</li>
+            <li>Atención empresarial dedicada</li>
+          </ul>
+          <a href="https://wa.me/573204474231?text=Hola%2C%20me%20interesa%20el%20Plan%20Premium" target="_blank" rel="noopener" class="btn-solder justify-content-center">Consultar plan</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-1">
+      <div class="col-md-6">
+        <div class="price-card reveal">
+          <div class="plan-name">Web básica + hosting</div>
+          <div class="plan-target">Sitios sencillos, 1–5 páginas</div>
+          <div class="plan-price">$30.000 <span class="per">/ mes</span></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="price-card reveal">
+          <div class="plan-name">Web + soporte avanzado</div>
+          <div class="plan-target">Actualizaciones y backups continuos</div>
+          <div class="plan-price">$70.000 <span class="per">/ mes</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="section-tag">// Líneas de servicio</span>
+      <h2 class="section-title">Tres frentes, <span class="accent">un solo proveedor</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="component-card reveal">
+          <div class="pin-row"><span class="pin"></span><span class="pin"></span><span class="pin"></span></div>
+          <span class="idx">SRV / 01</span>
+          <h3>Mantenimiento y reparación</h3>
+          <p>Diagnóstico, limpieza, cambio de pasta térmica, optimización de software y reparación de laptops y equipos de escritorio.</p>
+          <ul>
+            <li>Mantenimiento preventivo y correctivo</li>
+            <li>Reemplazo de componentes (SSD, RAM, fuentes)</li>
+            <li>Instalación de redes básicas</li>
+            <li>Soporte remoto por incidente o suscripción</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card reveal">
+          <div class="pin-row"><span class="pin"></span><span class="pin"></span><span class="pin"></span></div>
+          <span class="idx">SRV / 02</span>
+          <h3>Ensamble y venta de equipos</h3>
+          <p>Armado de PCs gamer y de oficina a medida, con asesoría personalizada según presupuesto y uso.</p>
+          <ul>
+            <li>PCs gamer por pedido</li>
+            <li>Equipos de oficina listos o a pedido</li>
+            <li>Periféricos: monitores, teclados, SSD, RAM</li>
+            <li>Opción de renting para empresas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="component-card reveal">
+          <div class="pin-row"><span class="pin"></span><span class="pin"></span><span class="pin"></span></div>
+          <span class="idx">SRV / 03</span>
+          <h3>Páginas web y hosting</h3>
+          <p>Sitios web sencillos y administrables, con dominio, hosting y mantenimiento mensual incluido.</p>
+          <ul>
+            <li>Sitios de 1 a 5 páginas</li>
+            <li>Hosting, backups y actualizaciones</li>
+            <li>Soporte web avanzado disponible</li>
+            <li>Integraciones a medida bajo demanda</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARKETPLACE ================= -->
+<section id="marketplace" style="background: var(--bg-raise); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="section-tag">// Compra y venta</span>
+      <h2 class="section-title">Partes y equipos, <span class="accent">de segunda o nuevos</span></h2>
+      <p class="hero-lede" style="margin-top:1rem;">Compramos, vendemos y recibimos en parte de pago componentes y equipos completos. Escríbenos qué tienes o qué necesitas.</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="market-tile reveal">
+          <span class="mt-icon">🖥️</span>
+          <div class="mt-label">PCs completos</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="market-tile reveal">
+          <span class="mt-icon">🧠</span>
+          <div class="mt-label">RAM y procesadores</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="market-tile reveal">
+          <span class="mt-icon">💾</span>
+          <div class="mt-label">SSD y almacenamiento</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="market-tile reveal">
+          <span class="mt-icon">🖱️</span>
+          <div class="mt-label">Periféricos varios</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="proceso" style="background: var(--bg-raise); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container-xl">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="section-head reveal" style="margin-bottom:1rem;">
+          <span class="section-tag">// Protocolo de atención</span>
+          <h2 class="section-title">Cómo <span class="accent">trabajamos</span></h2>
+        </div>
+        <p class="hero-lede reveal" style="margin-bottom:0;">
+          Un proceso simple, documentado y con tiempos claros — igual para un mantenimiento puntual que para un contrato empresarial.
+        </p>
+      </div>
+      <div class="col-lg-8">
+        <div class="diag-step reveal">
+          <div class="step-code">CONTACTO</div>
+          <div>
+            <h4>Nos escribes por WhatsApp</h4>
+            <p>Cuéntanos qué necesitas: reparación, equipo nuevo, partes o una web. Respondemos con diagnóstico y cotización.</p>
+          </div>
+        </div>
+        <div class="diag-step reveal">
+          <div class="step-code">DIAGNÓSTICO</div>
+          <div>
+            <h4>Evaluamos en sitio o remoto</h4>
+            <p>Para empresas, coordinamos visitas incluso en fines de semana, sin afectar la operación.</p>
+          </div>
+        </div>
+        <div class="diag-step reveal">
+          <div class="step-code">EJECUCIÓN</div>
+          <div>
+            <h4>Reparamos, armamos o publicamos</h4>
+            <p>Trabajamos con checklist de calidad: pruebas de estrés en equipos, pruebas de restauración en webs y backups.</p>
+          </div>
+        </div>
+        <div class="diag-step reveal">
+          <div class="step-code">SEGUIMIENTO</div>
+          <div>
+            <h4>Soporte continuo</h4>
+            <p>Si tienes un plan recurrente, damos seguimiento mensual y estamos disponibles ante cualquier incidente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section>
+  <div class="container-xl">
+    <div class="cta-band reveal">
+      <div class="section-tag" style="justify-content:center; display:flex;">// Diagnóstico gratuito</div>
+      <h2>¿Tu equipo va lento o tu empresa necesita soporte constante?</h2>
+      <p>Escríbenos y agenda un diagnóstico tecnológico gratuito, sin compromiso.</p>
+      <a href="https://wa.me/573204474231?text=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito" target="_blank" rel="noopener" class="btn-whatsapp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.22 8.22 0 1 1 6.96 3.84zm4.5-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="section-tag">// Contacto</span>
+      <h2 class="section-title">Hablemos de tu <span class="accent">próximo proyecto</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="contact-info-row reveal">
+          <div class="ci-icon">💬</div>
+          <div>
+            <div class="ci-label">WhatsApp</div>
+            <div class="ci-value">+57 320 447 4231</div>
+          </div>
+        </div>
+        <div class="contact-info-row reveal">
+          <div class="ci-icon">📍</div>
+          <div>
+            <div class="ci-label">Zona de atención</div>
+            <div class="ci-value">Bogotá y alrededores</div>
+          </div>
+        </div>
+        <div class="contact-info-row reveal">
+          <div class="ci-icon">🕒</div>
+          <div>
+            <div class="ci-label">Horario</div>
+            <div class="ci-value">Lun–Vie, con turnos en fin de semana para empresas</div>
+          </div>
+        </div>
+        <a href="https://wa.me/573204474231" target="_blank" rel="noopener" class="btn-whatsapp mt-2 reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.22 8.22 0 1 1 6.96 3.84zm4.5-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+          Iniciar conversación
+        </a>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="contact-panel reveal">
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label form-label-dark">Nombre</label>
+                <input type="text" class="form-control form-control-dark" placeholder="Tu nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-dark">Teléfono</label>
+                <input type="tel" class="form-control form-control-dark" placeholder="300 000 0000" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label form-label-dark">¿Qué necesitas?</label>
+                <select class="form-select form-control-dark" id="serviceSelect">
+                  <option value="Mantenimiento o reparación">Mantenimiento o reparación</option>
+                  <option value="Compra de PC o partes">Compra de PC o partes</option>
+                  <option value="Venta de mi equipo/partes">Venta de mi equipo/partes</option>
+                  <option value="Página web">Página web</option>
+                  <option value="Plan de soporte empresarial">Plan de soporte empresarial</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label form-label-dark">Mensaje</label>
+                <textarea class="form-control form-control-dark" rows="4" placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-whatsapp w-100 justify-content-center">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.22 8.22 0 1 1 6.96 3.84zm4.5-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+                  Enviar por WhatsApp
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="brand-mark mb-3">
+          <span class="dot"></span>
+          <span>Vertech</span>
+        </div>
+        <p style="color:var(--text-dim); font-size:.85rem; max-width:280px;">
+          Soporte técnico, ensamble de equipos y desarrollo web para particulares y pymes.
+        </p>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="foot-col-title">Servicios</div>
+        <a class="foot-link" href="#servicios">Mantenimiento</a>
+        <a class="foot-link" href="#servicios">Ensamble de PCs</a>
+        <a class="foot-link" href="#servicios">Páginas web</a>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="foot-col-title">Empresas</div>
+        <a class="foot-link" href="#planes">Planes B2B</a>
+        <a class="foot-link" href="#proceso">Cómo trabajamos</a>
+      </div>
+      <div class="col-md-4">
+        <div class="foot-col-title">Contacto</div>
+        <a class="foot-link" href="https://wa.me/573204474231" target="_blank" rel="noopener">WhatsApp: +57 320 447 4231</a>
+        <a class="foot-link" href="#contacto">Formulario de contacto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vertech. Todos los derechos reservados.</span>
+      <span>Bogotá, Colombia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/573204474231?text=Hola%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" class="wa-float" aria-label="Escribir por WhatsApp">
+  <span class="wa-pulse"></span>
+  <svg viewBox="0 0 24 24" fill="#06210F"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.22 8.22 0 1 1 6.96 3.84zm4.5-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.06 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
